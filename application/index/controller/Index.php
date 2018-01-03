@@ -2,7 +2,6 @@
 namespace app\index\controller;
 
 
-use my\Test;
 use think\facade\Config;
 use think\facade\Env;
 use think\facade\Hook;
@@ -22,6 +21,6 @@ class Index
 
     public function test()
     {
-        echo Test::index();
+        echo Env::get('app_path');
     }
 }
